@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'home.apps.HomeConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -118,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/home/static/css',
+    '/home/static/',
 ]
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 

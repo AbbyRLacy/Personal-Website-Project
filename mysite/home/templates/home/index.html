@@ -1,5 +1,6 @@
+{% load static from staticfiles %}
 <!DOCTYPE HTML>
-{% load staticfiles %}
+
 <html>
 	<head>
 		<title>Industrious by TEMPLATED</title>
@@ -7,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href={% static 'home/static/css/main.css' %} />
+		<link rel="stylesheet" href={% static '/home/assets/css/main.css' %} />
 	</head>
 	<body class="is-preload">
 
@@ -32,10 +33,9 @@
 			<section id="banner">
 				<div class="inner">
 					<h1>Industrious</h1>
-					<p>A responsive business oriented template with a video background<br />
-					designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p>
+					<p>A responsive business oriented template with a video background<br /></p>
 				</div>
-				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+				<video autoplay loop muted playsinline src={% static '/home/images/banner.mp4' %}></video>
 			</section>
 
 		<!-- Highlights -->
@@ -127,7 +127,7 @@
 								</blockquote>
 								<div class="author">
 									<div class="image">
-										<img src="images/pic01.jpg" alt="" />
+										<img src={% static '/home/images/pic01' %} alt="" />
 									</div>
 									<p class="credit">- <strong>Jane Doe</strong> <span>CEO - ABC Inc.</span></p>
 								</div>
@@ -140,7 +140,7 @@
 								</blockquote>
 								<div class="author">
 									<div class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src={% static '/home/images/pic03' %} alt="" />
 									</div>
 									<p class="credit">- <strong>John Doe</strong> <span>CEO - ABC Inc.</span></p>
 								</div>
@@ -153,7 +153,7 @@
 								</blockquote>
 								<div class="author">
 									<div class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src={% static '/home/images/pic02' %} alt="" />
 									</div>
 									<p class="credit">- <strong>Janet Smith</strong> <span>CEO - ABC Inc.</span></p>
 								</div>
@@ -197,11 +197,11 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src={% static "/home/assets/js/jquery.min.js" %}></script>
+			<script src={% static "/home/assets/js/browser.min.js" %}></script>
+			<script src={% static "/home/assets/js/breakpoints.min.js" %}></script>
+			<script src={% static "/home/assets/js/util.js" %}></script>
+			<script src={% static "/home/assets/js/main.js" %}></script>
 
 	</body>
 </html>

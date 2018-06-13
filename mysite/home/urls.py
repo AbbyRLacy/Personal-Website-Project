@@ -17,6 +17,9 @@ urlpatterns = [
 
     path('generic', views.generic, name = 'generic'),
     path('generic.html', views.generic, name = 'generic.html'),
+
+    path('about', views.about, name = 'about'),
+    path('about.html', views.about, name = 'about.html'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

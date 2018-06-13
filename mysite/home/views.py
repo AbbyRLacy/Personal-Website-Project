@@ -21,5 +21,9 @@ def generic(request):
     template_name = 'home/generic.html'
     return render(request, 'home/generic.html')
 
+def about(request):
+    template_name: 'home/about.html'
+    return render(request, 'home/about.html')
+
 
 # Create your views here.
